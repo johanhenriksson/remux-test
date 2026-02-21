@@ -1,0 +1,15 @@
+image:
+  dockerfile: Dockerfile
+  target: dev
+
+env:
+  PORT: "{{ space.Port + 1 }}"
+
+hooks:
+  on_create:
+    - npm install
+
+tabs:
+  - name: dev
+    cmd: npm run dev
+  - name: shell

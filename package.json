@@ -1,0 +1,11 @@
+{
+  "name": "remux-test",
+  "private": true,
+  "scripts": {
+    "start": "node index.js",
+    "dev": "npx nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
